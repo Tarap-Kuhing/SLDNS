@@ -13,7 +13,7 @@ DOMAIN=tarong.my.id
 SUB_DOMAIN=${sub}.tarong.my.id
 NS_DOMAIN=${subsl}.tarong.my.id
 CF_ID=merahjambo@gmail.com
-CF_KEY=31a54688202d51506df5b6640b541aac81bf8
+CF_KEY=86431de017f7bf317c3960061da2f87c8effb
 echo "IP=""$SUB_DOMAIN" >> /var/lib/crot/subdomain.conf
 set -euo pipefail
 IP=$(wget -qO- icanhazip.com);
