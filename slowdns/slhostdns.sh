@@ -7,11 +7,9 @@ apt install jq curl -y
 rm -rf /root/nsdomain
 rm nsdomain
 
-DOMAIN=hendra93.my.id
-sub=$(</dev/urandom tr -dc a-z0-9 | head -c5)
+DOMAIN=sg3.tarong.my.id
 subsl=$(</dev/urandom tr -dc a-x0-9 | head -c5)
-SUB_DOMAIN=${sub}.hendra93.my.id
-NS_DOMAIN=${subsl}.hendra93.my.id
+NS_DOMAIN=${subsl}.sg3.tarong.my.id
 CF_ID=merahjambo@gmail.com
 CF_KEY=86431de017f7bf317c3960061da2f87c8effb
 echo "IP=""$SUB_DOMAIN" >> /var/lib/subdomain.conf
