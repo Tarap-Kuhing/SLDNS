@@ -14,7 +14,7 @@ SUB_DOMAIN=${sub}.hendra93.my.id
 NS_DOMAIN=${subsl}.hendra93.my.id
 CF_ID=merahjambo@gmail.com
 CF_KEY=86431de017f7bf317c3960061da2f87c8effb
-echo "IP=""$SUB_DOMAIN" >> /var/lib/tarapkuhing/subdomain.conf
+echo "IP=""$SUB_DOMAIN" >> /var/lib/subdomain.conf
 set -euo pipefail
 IP=$(wget -qO- icanhazip.com);
 echo "Updating DNS for ${SUB_DOMAIN}..."
