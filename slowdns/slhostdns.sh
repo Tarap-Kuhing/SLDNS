@@ -8,11 +8,13 @@ rm -rf /root/nsdomain
 rm nsdomain
 
 DOMAIN=sg3.tarong.my.id
+sub=$(</dev/urandom tr -dc a-x0-9 | head -c5)
 subsl=$(</dev/urandom tr -dc a-x0-9 | head -c5)
+SUB_DOMAIN=${sub}.sg3.tarong.my.id
 NS_DOMAIN=${subsl}.sg3.tarong.my.id
 CF_ID=merahjambo@gmail.com
 CF_KEY=86431de017f7bf317c3960061da2f87c8effb
-echo "IP=""$SUB_DOMAIN" >> /var/lib/subdomain.conf
+echo "IP=""$SUB_DOMAIN" >> /var/lib/ipvps.conf
 set -euo pipefail
 IP=$(wget -qO- icanhazip.com);
 echo "Updating DNS for ${SUB_DOMAIN}..."
