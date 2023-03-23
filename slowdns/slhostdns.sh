@@ -14,7 +14,7 @@ SUB_DOMAIN=${sub}.kuhing.my.id
 NS_DOMAIN=${subsl}.kuhing.my.id
 CF_ID=merahjambo@gmail.com
 CF_KEY=86431de017f7bf317c3960061da2f87c8effb
-echo "IP=""$SUB_DOMAIN" >> /var/lib/ipvps.conf
+echo "IP=""$SUB_DOMAIN" >> /var/lib/crot/ipvps.conf
 set -euo pipefail
 IP=$(wget -qO- icanhazip.com);
 echo "Updating DNS for ${SUB_DOMAIN}..."
